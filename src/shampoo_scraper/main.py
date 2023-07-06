@@ -114,6 +114,7 @@ async def amain():
     msgs = ""
     for res in results:
         if res is None:
+            logger.debug("No result parsed, not formatting the message.")
             continue
 
         logger.debug(f"Formatting messages from result: {res}")
