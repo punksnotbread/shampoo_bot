@@ -22,4 +22,4 @@ class TelegramBot(Bot):
             },
         )
 
-        logger.info(response.text)
+        logger.debug(f"Message sent, received: {response.text}")

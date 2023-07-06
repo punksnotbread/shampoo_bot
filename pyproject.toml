@@ -8,12 +8,13 @@ packages = [{include = "shampoo_scraper", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-playwright = "^1.33.0"
+playwright = "^1.35.0"
 python-telegram-bot = "^20.3"
 aiolimiter = "^1.1.0"
 lxml = "^4.9.2"
 pydantic = "^2.0"
 pydantic-settings = "^2.0.0"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
