@@ -57,7 +57,8 @@ class EurovaistineParser(Parser):
     def parse(self, body: str) -> list[dict[str, str]]:
         tree = etree.HTML(body)
         products = tree.xpath(
-            ".//div[@class='product-list clearfix']//*[@class='productCard']"
+            ".//div[contains(@class, 'product-list clearfix')]"
+            "//*[@class='productCard']"
         )
         logger.debug(f"Found {len(products)} products in page.")
 
