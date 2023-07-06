@@ -21,6 +21,17 @@ Do not forget to configure the BOT_TOKEN & CHAT_ID for Telegram. Also, see Confi
 poetry run python -m shampoo_scraper.main
 ```
 
+## Docker
+App can be built as a Docker container.
+```commandline
+docker build -f infrastructure/app/Dockerfile .
+```
+
+And then run
+```commandline
+docker run CONTAINER_ID
+```
+
 ## Configuration
 Project is configured via .env file. Currently used/supported keys:
 * `BOT_TOKEN` - bot token for Telegram.
