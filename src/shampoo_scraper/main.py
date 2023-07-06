@@ -74,7 +74,7 @@ async def run_process(
         try:
             result = parser.parse(html)
         except Exception as e:
-            logger.error(f"Exception when parsing: {e}")
+            logger.error(f"Exception when parsing: {e!r}")
             result = None
 
         if not result:
