@@ -50,7 +50,8 @@ Project is configured via .env file. Currently used/supported keys:
 ## TODOs
 - [ ] Make it a running daemon with ability to trigger from chat
 - [ ] Save historic results to DB
-- [x] Better logging
-- [x] Containerise
 - [ ] Mypy
 - [ ] Tests
+- [ ] Configurable logger
+- [x] Better logging
+- [x] Containerise

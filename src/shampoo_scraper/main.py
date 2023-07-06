@@ -13,6 +13,7 @@ from shampoo_scraper.parsers import make_parser
 from shampoo_scraper.settings import Settings
 from shampoo_scraper.url_builders import make_url_builder
 
+# TODO: Configurable logger.
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s [%(name)s] [%(levelname)s] %(message)s",
