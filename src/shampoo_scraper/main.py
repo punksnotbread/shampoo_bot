@@ -66,7 +66,7 @@ async def run_process(
             try:
                 html = await goto_page(context, url)
             except ScrapeNotSuccessfulError:
-                logger.info("Scrape was not successful for {url}, not parsing.")
+                logger.info(f"Scrape was not successful for `{url}`, not parsing.")
                 return None
 
         logger.debug(f"Parsing for `{type_}`.")
@@ -79,7 +79,7 @@ async def run_process(
 
         if not result:
             outfn = url.split("/")[-1] + ".html"
-            logger.warning(f"No products parsed for {url}, saving html to {outfn}")
+            logger.warning(f"No products parsed for `{url}`, saving html to `{outfn}`")
             with open(outfn, "w") as outfile:
                 outfile.write(html)
 
